@@ -4,6 +4,14 @@
 import functions
 #if we have more than one function to import, can use this method
 
+import time
+#time module can be used to determine time
+
+now = time.strftime("%b %d , %Y %H:%M:%S")
+
+print("It is ", now)
+
+
 while True:
     user_action=input("type add, show, edit, complete or exit: ")
     user_action=user_action.strip()
