@@ -6,3 +6,6 @@ desk clean
 turn off lights
 hello
 hello
+Master python
+Read world
+Finish today topic
