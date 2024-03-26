@@ -2,10 +2,10 @@ shiower
 clean
 wash
 make pizza
-desk clean
-turn off lights
-hello
-hello
+put on showerhello
 Master python
 Read world
 Finish today topic
+do it quick
+make it
+create desk
