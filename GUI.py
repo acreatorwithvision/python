@@ -11,9 +11,7 @@ edit_button = sg.Button("Edit")
 
 
 button_labels=["close","apply"]
-layout=[]
-for bl in button_labels:
-    layout.append([sg.Button(bl)])
+
 
 layout=[[label], [input_box, add_button], [list_box, edit_button]]
 
