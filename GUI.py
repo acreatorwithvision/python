@@ -12,8 +12,12 @@ edit_button = sg.Button("Edit")
 
 button_labels=["close","apply"]
 
+complete_button=sg.Button("Complete")
 
-layout=[[label], [input_box, add_button], [list_box, edit_button]]
+
+layout=[[label], 
+        [input_box, add_button], 
+        [list_box, edit_button,complete_button]]
 
 window = sg.Window('My To-Do App',
                    layout=layout,
@@ -23,9 +27,9 @@ window = sg.Window('My To-Do App',
 
 while True:
     event, values = window.read()
-    print(event)
-    print(values)
-    print(values['todos'])
+    print(1,event)
+    print(2,values)
+    print(3,values['todos'])
     match event:
         case "Add":
             todos = functions.get_todos()
@@ -43,6 +47,9 @@ while True:
             todos[index] = new_todo
             functions.write_todos(todos)
             window['todos'].update(values=todos)
+
+        case 'complete':
+            todo_to_complete=values['todos'][0]
         case 'todos':
             window['todo'].update(value=values['todos'][0])
         case sg.WIN_CLOSED:
