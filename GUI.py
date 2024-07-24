@@ -47,7 +47,7 @@ while True:
             todos[index] = new_todo
             functions.write_todos(todos)
             window['todos'].update(values=todos)
-
+            
         case 'complete':
             todo_to_complete=values['todos'][0]
         case 'todos':
