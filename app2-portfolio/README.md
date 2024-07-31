@@ -1,0 +1,1 @@
+This folder contains web app for personal portfolio showcase.
