@@ -1,10 +1,5 @@
 import streamlit as st
-import sys
-import os
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from send_email import send_email
+from C:\Users\DELL\PycharmProjects\python\app2-portfolio\send_email
 
 st.header("Contact Me")
 
